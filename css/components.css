@@ -1,0 +1,110 @@
+/* Кнопка */
+.button {
+  border-radius: 100px;
+  border: 1px solid var(--text-primary);
+  padding: 16px 20px;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background-color 0.3s,
+    color 0.3s;
+}
+
+.button path {
+  stroke: var(--text-primary);
+  transition: stroke 0.3s;
+}
+
+.button:hover {
+  color: var(--text-inverse);
+  background-color: var(--text-primary);
+}
+
+.button:hover path {
+  stroke: var(--text-inverse);
+}
+
+/* посилання зі стрілкою */
+.arrow-link {
+  font-size: 18px;
+  line-height: 1.2;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px 20px;
+  transition: color 0.3s;
+}
+
+.arrow-link--left {
+  flex-direction: row-reverse;
+}
+
+.arrow-link--left svg{
+rotate: 180deg;
+}
+
+.arrow-link path {
+  stroke: var(--text-default);
+  transition: stroke 0.3s;
+
+}
+
+.arrow-link:hover {
+  color: var(--text-primary);
+}
+
+.arrow-link:hover path {
+  stroke: var(--text-primary);
+}
+
+/* Заголовок секцшї */
+
+.block-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.block-header__title {
+  line-height: 1.1;
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.block-header__title span{
+  color: var(--text-primary);
+}
+@media (max-width:991.98px) {
+  .block-header__title {
+    font-size: 70px;
+  }
+}
+@media (max-width:768.98px) {
+  .block-header__title {
+    font-size: 38px;
+  }
+}
+
+/* Соцшальні мережі */
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 30px;
+}
+.social__item {
+}
+.social__link {
+  text-transform: uppercase;
+  transition: color 0.3s;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.social__link:hover {
+  color: var(--text-primary);
+}
